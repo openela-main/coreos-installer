@@ -1,0 +1,10 @@
+--- coreos-installer-0.15.0/Cargo.toml.old	2022-06-30 14:41:55.017099085 -0400
++++ coreos-installer-0.15.0/Cargo.toml	2022-06-30 14:44:20.754046186 -0400
+@@ -156,6 +156,7 @@
+ 
+ [features]
+ mangen = ["clap_mangen"]
++default = ["rdcore"]
+ rdcore = []
+ [target."cfg(target_arch = \"s390x\")".dependencies.mbrman]
+ version = ">= 0.3, < 0.5"
